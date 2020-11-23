@@ -18,36 +18,35 @@
     </header>
         <div class="form-content">
             <form class="form-payroll">
-                <div class="form-header">Employee Payroll Form</div>
-                <div class ="input-name">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <error-output class="error-name"></error-output>
+                <div class="formHeader">Employee Payroll Form</div>
+                <div class ="row-content">
+                    <label class="Labels" for="name">Name</label>
+                <input class="input text" type="text" id="name" name="name" required>
                 </div>
                 <div class="row-content">
-                    <label for="profilePic">Profile image</label>
-                    <div class="radio-content">
-                        <label for="female">
-                            <input type="radio" id="female" name="profilePic" value="../assets/profilePic/Ellipse -1.png" required>
-                            <img src="../assets/profile -1.png" alt="female">
-                        </label>
-                        <label for="male">
-                            <input type="radio" id="male" name="profilePic" value="../assets/profilePic/Ellipse -2.png" required>
-                            <img src="../assets/profile -2.png" alt="male">
-                        </label>
-                        <label for="femaleOne">
-                            <input type="radio" id="femaleOne" name="profilePic" value="../assets/profilePic/Ellipse -4.png" required>
-                            <img src="../assets/profile -3.png" alt="male">
-                        </label>
-                        <label for="maleOne">
-                            <input type="radio" id="maleOne" name="profilePic" value="../assets/profilePic/Ellipse -3.png" required>
-                            <img src="../assets/profile -4.png" alt="female">
-                        </label>
-                    </div>
+                <label class="Labels" for="profilePic">Profile image</label>
+                <div class="input">
+                    <label class="MultipleLabels" for="female">
+                        <input type="radio" id="female" name="profilePic" value="../assets/profilePic/Ellipse -1.png" required>
+                        <img src="../assets/profile -1.png" alt="female">
+                    </label>
+                    <label class="MultipleLabels" for="male">
+                        <input type="radio" id="male" name="profilePic" value="../assets/profilePic/Ellipse -2.png" required>
+                        <img src="../assets/profile -2.png" alt="male">
+                    </label>
+                    <label class="MultipleLabels" for="femaleOne">
+                        <input type="radio" id="femaleOne" name="profilePic" value="../assets/profilePic/Ellipse -4.png" required>
+                        <img src="../assets/profile -4.png" alt="female">
+                    </label>
+                    <label class="MultipleLabels" for="maleOne">
+                        <input type="radio" id="maleOne" name="profilePic" value="../assets/profilePic/Ellipse -3.png" required>
+                        <img src="../assets/profile -3.png" alt="male">
+                    </label>
+                </div>
                 </div>
                 <div class="row-content">
                     <label class="Labels" for="gender">Gender</label>
-                    <div class="radio-gender">
+                    <div class="input">
                         <label class="MultipleLabels" for="male">
                             <input type="radio" id="male" name="gender" value="male">Male
                         </label>
@@ -58,7 +57,7 @@
                 </div>
                 <div class="row-content">
                     <label class="Labels" for="department">Department</label>
-                    <div class="checkbox"> 
+                    <div class="input"> 
                         <label class="MultipleLabels" for="hr">
                             <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">HR</label> 
                         <label class="MultipleLabels" for="sales">
@@ -149,5 +148,17 @@
                        </select>
                     </div>
                 </div>
+                <div class="row-content">
+                    <label class="Labels" for="notes">Notes</label>
+                    <textarea id="notes" class="input" name="notes" placeholder="Enter your notes here..." style="height:80px"></textarea>
+                </div>
+                <div class="allButtons">
+                    <a class="cancel" href="./EmployeePayrollUI.html" ><button type="button" class="button">Cancel</button></a>
+                    <div class="submit-reset">
+                        <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                        <button type="reset" class="button resetButton">Reset</button>
+                    </div> 
+                </div> 
+          </div>      
 </body>
 </html>
