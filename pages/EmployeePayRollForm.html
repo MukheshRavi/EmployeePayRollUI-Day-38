@@ -24,7 +24,7 @@
                     <input type="text" id="name" name="name" required>
                     <error-output class="error-name"></error-output>
                 </div>
-                <div class="input-profile">
+                <div class="row-content">
                     <label for="profilePic">Profile image</label>
                     <div class="radio-content">
                         <label for="female">
@@ -45,5 +45,36 @@
                         </label>
                     </div>
                 </div>
+                <div class="row-content">
+                    <label class="Labels" for="gender">Gender</label>
+                    <div class="radio-gender">
+                        <label class="MultipleLabels" for="male">
+                            <input type="radio" id="male" name="gender" value="male">Male
+                        </label>
+                        <label class="MultipleLabels" for="female">
+                            <input type="radio" id="famele" name="gender" value="female">Female
+                        </label>
+                    </div>
+                </div>
+                <div class="row-content">
+                    <label class="Labels" for="department">Department</label>
+                    <div class="checkbox"> 
+                        <label class="MultipleLabels" for="hr">
+                            <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">HR</label> 
+                        <label class="MultipleLabels" for="sales">
+                            <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">Sales</label>
+                        <label class="MultipleLabels" for="finance">
+                            <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">Finance</label> 
+                        <label class="MultipleLabels" for="engineer">
+                            <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">Engineer</label> 
+                        <label class="MultipleLabels" for="others">
+                            <input class="checkbox" type="checkbox" id="others" name="department" value="Others">Others</label>
+                    </div> 
+                </div>
+                <div class="row-content"> 
+                    <label class="Labels" for="salary">Salary</label> 
+                    <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+                    <output class="salary-output text" id="salaryOutput" for="salary">400000</output> 
+                </div> 
 </body>
 </html>
